@@ -13,7 +13,7 @@
 <body>
 
   <!-- меню -->
-  <div id="settingScreen" class="settingScreen">
+  <section id="settingScreen" class="settingScreen">
     <h2 class="sectionTitle">Новая игра</h2>
     <h3 class="sizeTitle">Выберите размер игрового поля</h3>
 
@@ -39,10 +39,10 @@
     <div>
       <button type="submit" class="btn" id="start" onclick="startGame()">Начать игру</button>
     </div>
-  </div>
+  </section>
 
   <!-- поле игры -->
-  <main id="main" class="main displayNone">
+  <section id="main" class="main displayNone">
     <h1 class="main_title">Игра в пары</h1>
     <div class="timer">
       <span>Оставшееся время игры: </span>
@@ -50,20 +50,22 @@
     </div>
     <div class="card-block container" id="card-block">
     </div>
-  </main>
+  </section>
 
   <!-- результаты игры -->
-  <div id="win" class="win displayNone">
-    <h2 class="sectionTitle">Победа!</h2>
-  </div>
-  <div id="timeOff" class="timeOff displayNone">
-    <h2 class="sectionTitle">Время вышло</h2>
-  </div>
-  <div id="endGame" class="endGame displayNone">
-    <div class="countPairTry" id="countPairTry"></div>
-    <div class="countGameSecond" id="countGameSecond"></div>
-    <button class="showSettingScreen btn" onclick="location.reload()">«В меню»</button>
-    <button class="rerun btn" onclick="startGame()">«Сыграть ещё раз»</button>
-  </div>
+  <section>
+    <div id="win" class="win displayNone">
+      <h2 class="sectionTitle">Победа!</h2>
+    </div>
+    <div id="timeOff" class="timeOff displayNone">
+      <h2 class="sectionTitle">Время вышло</h2>
+    </div>
+    <div id="endGame" class="endGame displayNone">
+      <div class="countPairTry" id="countPairTry"></div>
+      <div class="countGameSecond" id="countGameSecond"></div>
+      <button class="showSettingScreen btn" onclick="location.reload()">«В меню»</button>
+      <button class="rerun btn" onclick="startGame()">«Сыграть ещё раз»</button>
+    </div>
+  </section>
 </body>
 </html>
