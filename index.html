@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="scripts/game.js"></script>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Pair_game</title>
+</head>
+<body>
+
+  <!-- меню -->
+  <div id="settingScreen" class="settingScreen">
+    <h2 class="sectionTitle">Новая игра</h2>
+    <h3 class="sizeTitle">Выберите размер игрового поля</h3>
+
+    <!-- выбор размера -->
+    <div class="sizeScreen">
+      <button id="decrease" onclick="handleSizeDecrement()">-</button>
+      <span id="size"></span>
+      <button id="increase" onclick="handleSizeIncrement()">+</button>
+    </div>
+
+    <!-- выбор сложности -->
+    <div class="difficultScreen">
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineDifficultOptions" id="inlineDifficult1" value="easy" checked>
+        <label class="form-check-label" for="inlineDifficult1">Легко</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineDifficultOptions" id="inlineDifficult3" value="hard">
+        <label class="form-check-label" for="inlineDifficult3">Сложно</label>
+      </div>
+    </div>
+
+    <div>
+      <button type="submit" class="btn" id="start" onclick="startGame()">Начать игру</button>
+    </div>
+  </div>
+
+  <!-- поле игры -->
+  <main id="main" class="main displayNone">
+    <h1 class="main_title">Игра в пары</h1>
+    <div class="timer">
+      <span>Оставшееся время игры: </span>
+      <span id="timer"></span>
+    </div>
+    <div class="card-block container" id="card-block">
+    </div>
+  </main>
+
+  <!-- результаты игры -->
+  <div id="win" class="win displayNone">
+    <h2 class="sectionTitle">Победа!</h2>
+  </div>
+  <div id="timeOff" class="timeOff displayNone">
+    <h2 class="sectionTitle">Время вышло</h2>
+  </div>
+  <div id="endGame" class="endGame displayNone">
+    <div class="countPairTry" id="countPairTry"></div>
+    <div class="countGameSecond" id="countGameSecond"></div>
+    <button class="showSettingScreen btn" onclick="location.reload()">«В меню»</button>
+    <button class="rerun btn" onclick="startGame()">«Сыграть ещё раз»</button>
+  </div>
+</body>
+</html>

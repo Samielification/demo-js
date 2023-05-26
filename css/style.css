@@ -1,0 +1,129 @@
+
+html {
+  box-sizing: border-box;
+}
+
+fieldset {
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  overflow: auto;
+
+  text-align: center;
+}
+
+.settingScreen {
+  padding: 10px;
+}
+
+.form-check-inline {
+  display: inline;
+}
+
+.btn {
+  outline: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 18px 50px;
+  background: #3F2AFF;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.sectionTitle {
+  margin: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  color: #2E2B44;
+}
+
+.sizeTitle {
+  /* margin: 10px; */
+  font-size: 14px;
+  margin: 0;
+}
+
+.sizeScreen {
+  padding: 10px;
+}
+
+.difficultScreen {
+  padding: 30px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.displayNone {
+  display: none;
+}
+
+.container {
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto auto;
+  justify-content: center;
+  text-align: center;
+}
+
+.main_title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 98px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.card-block {
+  background: rgba(53, 51, 155, 0.5);
+}
+
+.card {
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+  font-size:0;
+  justify-content: center;
+}
+
+.card_easy {
+  background: rgba(49, 105, 56, 0.7);
+}
+
+.card_hard {
+  background: rgba(156, 57, 57, 0.7);
+}
+
+.card_show {
+  font-size: 60px;
+}
+
+.countPairTry {
+  margin-bottom: 5px;
+}
+
+.countGameSecond {
+  margin-bottom: 15px;
+}
+
+.timer {
+  margin-bottom: 10px;
+}
